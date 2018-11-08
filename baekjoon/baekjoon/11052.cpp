@@ -1,3 +1,4 @@
+//https://www.acmicpc.net/problem/11052
 #include <stdio.h>
 
 int d[1001], p[1001];

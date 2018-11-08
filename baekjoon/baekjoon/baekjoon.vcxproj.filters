@@ -45,9 +45,6 @@
     <ClCompile Include="1158.cpp">
       <Filter>소스 파일\queue</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\etc\etc\1463.c">
-      <Filter>소스 파일\dp</Filter>
-    </ClCompile>
     <ClCompile Include="1463.cpp">
       <Filter>소스 파일\dp</Filter>
     </ClCompile>
@@ -82,6 +79,15 @@
       <Filter>소스 파일\dp</Filter>
     </ClCompile>
     <ClCompile Include="11052.cpp">
+      <Filter>소스 파일\dp</Filter>
+    </ClCompile>
+    <ClCompile Include="2193.cpp">
+      <Filter>소스 파일\dp</Filter>
+    </ClCompile>
+    <ClCompile Include="10844.cpp">
+      <Filter>소스 파일\dp</Filter>
+    </ClCompile>
+    <ClCompile Include="11057.cpp">
       <Filter>소스 파일\dp</Filter>
     </ClCompile>
   </ItemGroup>

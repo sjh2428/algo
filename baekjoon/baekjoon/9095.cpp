@@ -1,3 +1,4 @@
+//https://www.acmicpc.net/problem/9095
 #include <stdio.h>
 
 int d[11];
