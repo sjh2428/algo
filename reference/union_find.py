@@ -3,6 +3,7 @@ def find_parent(parent, x):
     if parent[x] == x:
         return x
     parent[x] = find_parent(parent, parent[x])
+    return parent[x]
 
 
 # 두 부모 노드를 합치는 함수
