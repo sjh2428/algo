@@ -1,7 +1,7 @@
 import re
 
-p = re.compile('[a-z]+')
-m = p.match('python')
+p = re.compile('^.rodo$')
+m = p.match('frodo')
 if m:
     print('match found: ', m.group())  # match found python
 else:
