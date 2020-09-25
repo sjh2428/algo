@@ -1,5 +1,7 @@
 # https://www.acmicpc.net/problem/10819
 
+from sys import stdin
+
 
 def next_permutation(perm):
     n = len(perm)
@@ -33,15 +35,12 @@ def calc(l):
 
 def solution():
     ans = 0
-    N = int(input())
-    l = list(map(int, input().split()))
+    N = int(stdin.readline())
+    l = list(map(int, stdin.readline().split()))
     l.sort()
 
-    while True:
-        result = calc(l)
-        ans = max(ans, result)
-        if not next_permutation(l):
-            break
+    while next_permutation(l):
+        ans = max(ans, calc(l))
 
     print(ans)
 
