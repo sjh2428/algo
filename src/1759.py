@@ -1,5 +1,7 @@
 # https://www.acmicpc.net/problem/1759
 
+from sys import stdin
+
 
 def check(password):
     mo, ja = 0, 0
@@ -21,8 +23,8 @@ def go(L, alpha, password, i):
 
 
 def solution():
-    L, C = map(int, input().split())
-    alpha = list(input().split())
+    L, C = map(int, stdin.readline().split())
+    alpha = stdin.readline().split()
     alpha.sort()
     go(L, alpha, "", 0)
 
