@@ -19,13 +19,8 @@ def go(a, idx, cur, plus, minus, mul, div):
     if mul > 0:
         res.append(go(a, idx + 1, cur * a[idx], plus, minus, mul - 1, div))
     if div > 0:
-        res.append(
-            go(a, idx + 1, div_method(cur, a[idx]), plus, minus, mul, div - 1))
-    ans = (
-        max([t[0] for t in res]),
-        min([t[1] for t in res])
-    )
-    return ans
+        res.append(go(a, idx + 1, div_method(cur, a[idx]), plus, minus, mul, div - 1))
+    return max([t[0] for t in res]), min([t[1] for t in res])
 
 
 def solution():
